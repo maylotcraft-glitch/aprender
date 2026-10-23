@@ -1,0 +1,106 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;  
+  max-width: 100%;       
+}
+html, body {
+  overflow-y: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  position: relative; 
+  z-index: 10;
+  background-color: #39c41e;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 25px 45px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu ul li a:hover {
+  background-color: #0066cc;
+}
+
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0059b3;
+  min-width: 180px;
+  flex-direction: column;
+}
+
+.menu ul li:hover ul {
+  display: flex;
+}
+
+.menu ul li ul li a {
+  padding: 12px 20px;
+}
+
+.menu ul li ul li a:hover {
+  background-color: #0073e6;
+}
+.inicio {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  text-align: center;
+background-color: rgb(26, 117, 202);
+}
+
+.categoria {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(6.5rem, 8vw, 5rem);
+  color: rgb(231, 14, 14);
+  z-index: 1;
+  position: relative;
+  letter-spacing: 4px;
+  margin-top: -150px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  color: rgb(231, 14, 14);
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.slogan3 {
+  margin-top: 1rem;
+  color: rgb(253, 254, 255);
+  z-index: 1;
+  position: relative;
+  font-size: 3.1rem;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,103 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+.menu {
+  background-color: #39c41e;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 25px 45px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu ul li a:hover {
+  background-color: #0066cc;
+}
+
+header {
+  background: #fff;
+  padding: 30px 0 50px;
+}
+
+.banner {
+  display: block;
+  width: min(800px, 90%);
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.azul {
+  height: 160px;
+  background: linear-gradient(
+    200deg,
+    rgb(12, 122, 224) 0 40%,
+    #fff 40% 48%,
+    rgb(12, 122, 224) 48% 100%
+  );
+}
+
+.blanco {
+  background: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: clamp(2rem, 6vw, 5.5rem);
+  line-height: 1.1;
+  color: rgb(214, 16, 16);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.rojo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 40px 20px 60px;
+  text-align: center;
+  background: linear-gradient(
+    200deg,
+    rgb(214, 16, 16) 0 10%,
+    #fff 10% 17%,
+    rgb(214, 16, 16) 17% 100%
+  );
+}
+
+.slogan {
+  color: rgb(12, 122, 224);
+  font-size: clamp(1.4rem, 3vw, 3.1rem);
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 260px;
+  max-width: 80%;
+  height: auto;
+}

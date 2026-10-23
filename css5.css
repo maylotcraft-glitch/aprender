@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.menu {
+  position: relative; 
+  z-index: 10;
+  background-color: #39c41e;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 25px 45px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu ul li a:hover {
+  background-color: #0066cc;
+}
+
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0059b3;
+  min-width: 180px;
+  flex-direction: column;
+}
+
+.menu ul li:hover ul {
+  display: flex;
+}
+
+.menu ul li ul li a {
+  padding: 12px 20px;
+}
+
+.menu ul li ul li a:hover {
+  background-color: #0073e6;
+}
+.inicio {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  min-height: 40vh;
+  width: 100%;
+  padding: 50px 20px;
+  background-color: rgb(26, 117, 202);
+}
+
+.categoria {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  position: relative;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 0 40px 0;
+  text-transform: uppercase;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;         
+  margin: 0 auto;
+}
+
+.imagen {
+  width: 440px;
+  max-width: 40vw;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+.nombre {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 35px;
+  margin-top: center; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  gap: 100px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;
+  align-items: center;
+  gap: 15px;               
+  margin-bottom: 20px;
+}
+.social-icons img {
+  width: 50px;
+  height: auto;
+  display: block;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  gap: clamp(20px, 10vw, 150px);             
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

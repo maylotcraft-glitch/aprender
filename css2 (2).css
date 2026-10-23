@@ -1,0 +1,151 @@
+body {
+  background: blue;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  background-color: #39c41e;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 25px 45px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu ul li a:hover {
+  background-color: #0066cc;
+}
+
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0059b3;
+  min-width: 180px;
+  flex-direction: column;
+}
+
+.menu ul li:hover ul {
+  display: flex;
+}
+
+.menu ul li ul li a {
+  padding: 12px 20px;
+}
+
+.menu ul li ul li a:hover {
+  background-color: #0073e6;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: rgb(26, 117, 202);
+}
+
+button {
+  padding: 20px 20px;
+  margin: 5px;
+  background: #fcfbfb;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #aad3ff;
+}
+.categoria {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(6.5rem, 8vw, 5rem);
+  color: whitesmoke;
+  z-index: 1;
+  position: relative;
+  letter-spacing: 4px;
+  margin-top: -150px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  color: whitesmoke;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.Taller {
+  font-size: 70px;
+  color: rgb(0, 0, 0)
+}
+.logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;   
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+  flex-wrap: wrap;           
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  gap: 20px;
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.sidebar button {
+  width: 100%;
+  margin: 5%;                 
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido img {
+  max-width: 100%;
+  width: 750px;              
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
